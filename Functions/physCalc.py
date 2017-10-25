@@ -75,5 +75,4 @@ def velocity():
     d = input('Distance in {}: '.format(distanceUnit))
     t = input('Time in {}: '.format(timeUnit))
     setVelocityUnit()
-    
 velocity()
