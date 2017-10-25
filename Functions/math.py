@@ -1,5 +1,7 @@
-import sys
-import math
-import matplotlib
-import cv2
-import numpy
+from sys import *
+from math import *
+from matplotlib import *
+from cv2 import *
+from numpy import *
+from Tkinter import *
+
