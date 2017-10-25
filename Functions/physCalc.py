@@ -6,6 +6,7 @@ import matplotlib
 import Tkinter
 import time
 import math
+import pint
 
 #define vars
 d = 0
@@ -68,14 +69,4 @@ def velocity():
     d = input('Distance in {}: '.format(distanceUnit))
     t = input('Time in {}: '.format(timeUnit))
     setVelocityUnit()
-
-
-distCoversionFactors = {'mtokm': 0.001, 'mtomi': 0.000621371}
-
-    
-def distConvert():
-
-
-def timeConvert():
-
 
