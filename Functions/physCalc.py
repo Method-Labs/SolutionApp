@@ -16,7 +16,6 @@ vf = 0
 vi = 0
 distanceUnit = 0
 timeUnit = 0
-accelerationUnit = 0
 #define functions
 def setDistanceUnit():
     global distanceUnit
@@ -79,4 +78,4 @@ def distConvert():
 
 def timeConvert():
 
-velocity()
+
