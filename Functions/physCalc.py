@@ -1,4 +1,4 @@
-#Import all required libraries and modules (this list will grow with time)
+ #Import all required libraries and modules (this list will grow with time)
 import sys
 import cv2
 import numpy
@@ -40,21 +40,15 @@ def setDistanceUnit():
 def setTimeUnit():
     global timeUnit
     timeUnit = raw_input('Pick your unit of time: ')
-    if timeUnit == ('m'):
+    if timeUnit == ('m') or timeUnit == ('min'):
         print('Time unit set to minutes.')
         timeUnit = ('minutes')
     elif timeUnit == ('s'):
         print('Time unit set to seconds.')
         timeUnit = ('seconds')
-    elif timeUnit == ('h'):
+    elif timeUnit == ('h') or timeUnit == ("hrs") or timeUnit == ('hr'):
         print('Time unit set to hours.')
         timeUnit = ('hours')
-    elif timeUnit == ('hr'):
-        print('Time unit set to hours.')
-        timeUnit = ('hours')
-    elif timeUnit == ('hrs'):
-        timeUnit = ('hours')
-        print('Time unit set to hours.')
 
 def setVelocityUnit():
     velocityUnit = raw_input('Pick your unit of velocity: ')
@@ -75,5 +69,12 @@ def velocity():
     d = input('Distance in {}: '.format(distanceUnit))
     t = input('Time in {}: '.format(timeUnit))
     setVelocityUnit()
+
+
+distCoversionFactors = {'mtokm': 0.001, 'mtomi': 0.000621371}
+
     
-velocity()
+def distConvert():
+
+
+def timeConvert():
