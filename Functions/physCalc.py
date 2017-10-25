@@ -78,3 +78,5 @@ def distConvert():
 
 
 def timeConvert():
+
+velocity()
